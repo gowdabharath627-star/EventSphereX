@@ -1,0 +1,154 @@
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:24px;
+    margin:30px 0;
+}
+
+.card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.25);
+
+}
+
+.card h3{
+
+    font-size:15px;
+
+    margin-bottom:18px;
+
+    opacity:.9;
+
+}
+
+.card h2{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+/* Decorative Circles */
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    right:-30px;
+
+    top:-30px;
+
+}
+
+.card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    left:-15px;
+
+    bottom:-15px;
+
+}
+
+/* Individual Colors */
+
+.card:nth-child(1){
+
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+
+}
+
+.card:nth-child(2){
+
+    background:linear-gradient(135deg,#7c3aed,#a855f7);
+
+}
+
+.card:nth-child(3){
+
+    background:linear-gradient(135deg,#059669,#34d399);
+
+}
+
+.card:nth-child(4){
+
+    background:linear-gradient(135deg,#ea580c,#fb923c);
+
+}
+
+.card:nth-child(5){
+
+    background:linear-gradient(135deg,#dc2626,#fb7185);
+
+}
+
+.card:nth-child(6){
+
+    background:linear-gradient(135deg,#0891b2,#22d3ee);
+
+}
+
+.card-icon{
+
+    position:absolute;
+
+    right:25px;
+
+    bottom:20px;
+
+    font-size:48px;
+
+    opacity:.25;
+
+}
+
+@media(max-width:768px){
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+}

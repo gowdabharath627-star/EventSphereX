@@ -1,0 +1,39 @@
+.layout{
+
+    display:flex;
+
+    min-height:100vh;
+
+    background:#f1f5f9;
+
+}
+
+.main-content{
+
+    flex:1;
+
+    margin-left:260px;
+
+    padding:30px;
+
+    transition:all .35s ease;
+
+}
+
+.main-content.collapsed{
+
+    margin-left:90px;
+
+}
+
+@media(max-width:900px){
+
+    .main-content{
+
+        margin-left:0;
+
+        padding:20px;
+
+    }
+
+}

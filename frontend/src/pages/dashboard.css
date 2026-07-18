@@ -1,0 +1,758 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#eef2ff;
+}
+
+/* Dashboard */
+
+.dashboard{
+
+    padding:30px;
+
+    background:linear-gradient(135deg,#eef2ff,#f8fafc);
+
+    min-height:100vh;
+
+}
+
+/* Header */
+
+.dashboard-header{
+
+    background:white;
+
+    padding:25px 35px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.dashboard-header h1{
+
+    font-size:34px;
+
+    color:#1e3a8a;
+
+}
+
+.dashboard-header p{
+
+    color:#64748b;
+
+    margin-top:6px;
+
+}
+
+.header-right{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+}
+
+.admin-profile{
+
+    font-weight:600;
+
+    color:#334155;
+
+    font-size:16px;
+
+}
+
+/* Export */
+
+.export-btn{
+
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.export-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.3);
+
+}
+
+/* Filters */
+
+.filters{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+.filters select{
+
+    min-width:180px;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #dbeafe;
+
+    background:#f8fafc;
+
+}
+
+.filters select:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+}
+
+/* Grid */
+
+.grid-two{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+}
+
+/* Chart Card */
+
+.chart-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.chart-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+.chart-card h2{
+
+    margin-bottom:20px;
+
+    color:#1e293b;
+
+}
+
+/* Tables */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:14px;
+
+}
+
+td{
+
+    padding:13px;
+
+    border-bottom:1px solid #edf2f7;
+
+}
+
+tr:hover{
+
+    background:#f8fbff;
+
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+.grid-two{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.filters{
+
+flex-direction:column;
+
+}
+
+.filters select{
+
+width:100%;
+
+}
+
+}
+/* ===========================
+   Ranking Cards
+=========================== */
+
+.ranking-item{
+
+    margin-bottom:18px;
+
+}
+
+.ranking-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#1e293b;
+
+}
+
+.progress{
+
+    width:100%;
+
+    height:10px;
+
+    background:#e5e7eb;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:linear-gradient(90deg,#2563eb,#60a5fa);
+
+}
+/* ================================
+   Dashboard Table
+================================ */
+
+.dashboard-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.dashboard-table thead{
+
+    background:#2563eb;
+
+}
+
+.dashboard-table th{
+
+    color:white;
+
+    padding:14px;
+
+    text-align:left;
+
+}
+
+.dashboard-table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #e2e8f0;
+
+}
+
+.dashboard-table tbody tr:nth-child(even){
+
+    background:#f8fafc;
+
+}
+
+.dashboard-table tbody tr:hover{
+
+    background:#e0f2fe;
+
+    transition:.3s;
+
+}
+
+.badge{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+/* Membership Badges */
+
+.premium-badge{
+
+    background:#16a34a;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.normal-badge{
+
+    background:#64748b;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+/* ===================================
+   Professional Filter Bar
+=================================== */
+
+.filters{
+
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;
+
+    background:#ffffff;
+
+    padding:18px 25px;
+
+    margin:25px 0;
+
+    border-radius:16px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.filters select{
+
+    min-width:180px;
+
+    padding:12px 16px;
+
+    border:1px solid #dbeafe;
+
+    border-radius:10px;
+
+    background:#f8fafc;
+
+    color:#334155;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.filters select:hover{
+
+    border-color:#2563eb;
+
+}
+
+.filters select:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+/* Search Box */
+
+.filter-search{
+
+    flex:1;
+
+    min-width:250px;
+
+}
+
+.filter-search input{
+
+    width:100%;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    border:1px solid #dbeafe;
+
+    background:#f8fafc;
+
+    transition:.3s;
+
+}
+
+.filter-search input:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+.recharts-cartesian-grid-horizontal line{
+
+    stroke:#e2e8f0;
+
+}
+
+.recharts-tooltip-wrapper{
+
+    outline:none;
+
+}
+
+.recharts-default-tooltip{
+
+    border:none!important;
+
+    border-radius:12px!important;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15)!important;
+
+}
+/* =======================================
+   Enterprise Header Upgrade
+======================================= */
+
+.dashboard-header{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.dashboard-header::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:6px;
+    height:100%;
+
+    background:linear-gradient(180deg,#2563eb,#60a5fa);
+
+}
+
+.dashboard-header h1{
+
+    font-size:36px;
+
+    font-weight:700;
+
+}
+
+.dashboard-header p{
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+/* =======================================
+   Admin Profile
+======================================= */
+
+.admin-profile{
+
+    background:#eff6ff;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    color:#2563eb;
+
+    border:1px solid #bfdbfe;
+
+}
+
+/* =======================================
+   Dashboard Section Title
+======================================= */
+
+.section-title{
+
+    margin:30px 0 18px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#1e293b;
+
+}
+
+/* =======================================
+   Smooth Animation
+======================================= */
+
+.chart-card,
+.dashboard-header,
+.filters{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =======================================
+   Nice Scrollbar
+======================================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f5f9;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b82f6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#2563eb;
+
+}
+
+/* =======================================
+   Cards Hover
+======================================= */
+
+.chart-card{
+
+    cursor:pointer;
+
+}
+
+.chart-card:hover{
+
+    transform:translateY(-8px) scale(1.01);
+
+}
+
+/* =======================================
+   Search Placeholder
+======================================= */
+
+.filter-search input::placeholder{
+
+    color:#94a3b8;
+
+}
+/* ===========================
+   Chart Header
+=========================== */
+
+.chart-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.chart-header h2{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#1e293b;
+
+    font-size:22px;
+
+}
+
+.chart-header p{
+
+    color:#64748b;
+
+    margin-top:6px;
+
+    font-size:14px;
+
+}
+
+.updated{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    padding:8px 14px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}

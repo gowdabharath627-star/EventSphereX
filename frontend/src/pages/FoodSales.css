@@ -1,0 +1,89 @@
+.food-page{
+
+    padding:10px;
+
+}
+
+.food-header{
+
+    margin-bottom:25px;
+
+}
+
+.food-header h1{
+
+    color:#1e293b;
+
+}
+
+.food-header p{
+
+    color:#64748b;
+
+    margin-top:8px;
+
+}
+
+.food-toolbar{
+
+    margin-bottom:20px;
+
+}
+
+.food-toolbar input{
+
+    width:340px;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+}
+
+.table-container{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:16px;
+
+    text-align:left;
+
+}
+
+td{
+
+    padding:16px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+tbody tr:hover{
+
+    background:#f8fafc;
+
+}

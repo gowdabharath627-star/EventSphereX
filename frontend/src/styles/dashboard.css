@@ -1,0 +1,67 @@
+.dashboard {
+
+    background: #f5f7fb;
+
+    min-height: 100vh;
+
+    padding: 30px;
+
+}
+
+.dashboard h1 {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+
+}
+
+.chart-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+}
+
+.chart-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+
+    transition: .3s;
+
+}
+
+.chart-card:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.chart-card h2 {
+
+    margin-bottom: 20px;
+
+}
+
+@media(max-width:1000px){
+
+.chart-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

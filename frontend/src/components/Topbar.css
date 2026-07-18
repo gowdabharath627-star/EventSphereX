@@ -1,0 +1,217 @@
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    padding:18px 25px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+.topbar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.topbar-left h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    color:#1e293b;
+
+}
+
+.topbar-left p{
+
+    margin-top:6px;
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+.menu-btn{
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.menu-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.topbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#f8fafc;
+
+    border:1px solid #dbeafe;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+}
+
+.search-box input{
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    width:220px;
+
+}
+
+.notification{
+
+    position:relative;
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#f8fafc;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+}
+
+.badge{
+
+    position:absolute;
+
+    top:6px;
+
+    right:6px;
+
+    background:red;
+
+    color:white;
+
+    font-size:10px;
+
+    padding:2px 6px;
+
+    border-radius:50%;
+
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#f8fafc;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+}
+
+.profile svg{
+
+    font-size:42px;
+
+    color:#2563eb;
+
+}
+
+.profile h4{
+
+    margin:0;
+
+    font-size:15px;
+
+}
+
+.profile span{
+
+    color:#64748b;
+
+    font-size:12px;
+
+}
+
+@media(max-width:900px){
+
+.search-box{
+
+display:none;
+
+}
+
+.profile div{
+
+display:none;
+
+}
+
+}
